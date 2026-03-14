@@ -1,11 +1,12 @@
 pre-commit:
   parallel: true
-  commands:
-    biome:
-      run: pnpm biome:check:staged
+  jobs:
+    - run: pnpm biome:check:staged
       stage_fixed: true
 pre-push:
   parallel: true
-  commands:
-    biome:
+  jobs:
+    - name: check-types
       run: pnpm tsc -b
+      root: apps/for-vercel
+      glob: apps/for-vercel/**
