@@ -3,9 +3,8 @@
   "private": true,
   "scripts": {
     "biome:check": "biome check .",
-    "biome:check:staged": "biome check --staged --no-errors-on-unmatched",
-    "biome:format": "biome format .",
-    "biome:format:staged": "biome format --write --staged",
+    "biome:check:write": "biome check --write .",
+    "biome:check:write:staged": "biome check --write --staged --no-errors-on-unmatched",
     "prepare": "lefthook install"
   },
   "devDependencies": {
