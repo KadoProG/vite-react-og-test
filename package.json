@@ -1,0 +1,15 @@
+{
+  "name": "vite-react-og-test",
+  "private": true,
+  "scripts": {
+    "biome:check": "biome check .",
+    "biome:check:staged": "biome check --staged",
+    "biome:format": "biome format .",
+    "biome:format:staged": "biome format --write --staged",
+    "prepare": "lefthook install"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.7",
+    "lefthook": "^2.1.4"
+  }
+}
